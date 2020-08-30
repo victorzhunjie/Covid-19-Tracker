@@ -1,0 +1,17 @@
+Why BEM
+BEM naming provides three specific benefits:
+
+It communicates purpose or function
+It communicates component structure
+It sets a consistent low-level of specificity for styling selectors
+How It Works
+A BEM class name includes up to three parts.
+
+Block: The outermost parent element of the component is defined as the block.
+Element: Inside of the component may be one or more children called elements.
+Modifier: Either a block or element may have a variation signified by a modifier.
+If all three are used in a name it would look something like this:
+
+[block]__[element]--[modifier]
+
+https://seesparkbox.com/foundry/bem_by_example
