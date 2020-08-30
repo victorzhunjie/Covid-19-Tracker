@@ -24,7 +24,6 @@ body{
   justify-content: space-between;
 }
 
-
 .app__left {
   flex: 0.9;
 }
@@ -35,17 +34,16 @@ body{
   justify-content: space-evenly;
 }
 
-.app__ .MuiCardContent-root {
+/* .app__ .MuiCardContent-root {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-}
+} */
 
 .app__stats {
 display: flex;
 justify-content: space-between;
 }
-
 
 @media (max-width: 990px) {
   .app{

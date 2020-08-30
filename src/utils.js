@@ -10,13 +10,13 @@ const casesTypeColors = {
     multiplier: 800,
   },
   recovered: {
-    hex: "#7dd71d",
+    hex: "#8CF9AF",
     rgb: "rgb(125, 215, 29)",
     // half_op: "rgba(125, 215, 29, 0.5)",
     multiplier: 1200,
   },
   deaths: {
-    hex: "#fb4443",
+    hex: "#1A13F8",
     rgb: "rgb(251, 68, 67)",
     // half_op: "rgba(251, 68, 67, 0.5)",
     multiplier: 2000,
@@ -26,11 +26,7 @@ const casesTypeColors = {
 export const sortData = (data) => {
   let sortedData = [...data];
   sortedData.sort((a, b) => {
-    if (a.cases > b.cases) {
-      return -1;
-    } else {
-      return 1;
-    }
+    return (a.cases > b.cases) ? -1 : 1;
   });
   return sortedData;
 };
@@ -41,6 +37,7 @@ export const prettyPrintStat = (stat) =>
 
 // draw circle on map
 export const showDataOnMap = (data, casesType = "cases") =>
+// Todo fix console error key
   data.map((country) => (
     <Circle
       center={[country.countryInfo.lat, country.countryInfo.long]}
